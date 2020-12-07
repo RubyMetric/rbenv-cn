@@ -1,8 +1,8 @@
 ## 安装
 
-支持Bash,Zsh
+支持Bash, Zsh
 
-计划支持Fish,PowerShell
+计划支持Fish, PowerShell
 
 rbenv源每周五晚强制手动更新,ruby-build已由Gitee官方镜像管理
 
