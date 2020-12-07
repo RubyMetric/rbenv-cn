@@ -1,6 +1,6 @@
 ## 介绍
 
-支持Bash, Zsh 计划支持Fish, PowerShell
+支持Bash, Zsh 暂不支持Fish, PowerShell
 
 镜像提示：
 
@@ -15,4 +15,9 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/install.sh)
 检查是否安装正确
 ```shell
 curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/doctor.sh | bash
+```
+
+卸载
+```shell
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/uninstall.sh)"
 ```
