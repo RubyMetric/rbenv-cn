@@ -11,3 +11,8 @@
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/install.sh)"
 ```
+
+检查是否安装正确
+```shell
+curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/doctor.sh | bash
+```
