@@ -10,7 +10,7 @@ cd ~/.rbenv && src/configure > /dev/null && make -C src > /dev/null
 echo "=> Git clone ruby-build"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
-echo "=> 添加环境变量"
+echo "=> 添加rbenv命令至环境变量(Bash,Zsh)"
 echo -e "\n# rbenv config " >> ~/.bashrc
 echo -e "\n# rbenv config " >> ~/.zshrc
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -22,5 +22,5 @@ echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
 
 echo "=> 安装完成!"
-echo "=> 最后请手动使用 rbenv init 来按照提示设置您的Shell环境"
+echo "=> 最后请您手动使用 rbenv init 按照提示初始化(即把~/.rbenv/shims加入环境变量)"
 echo 
