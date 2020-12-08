@@ -5,9 +5,8 @@ echo "=> Git clone rbenv"
 git clone -q https://gitee.com/RubyKids/rbenv-official.git "$HOME/.rbenv"
 
 echo "=> 尝试编译动态Bash扩展来加速rbenv. 若失败不要担心，rbenv仍然可以正常工作"
-cd ~/.rbenv && src/configure && make -C src
+cd ~/.rbenv && src/configure > /dev/null && make -C src > /dev/null
 
-echo
 echo "=> Git clone ruby-build"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
@@ -21,9 +20,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 echo "=> 使用Ruby China镜像"
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
-echo
-
-rbenv init
 
 echo "=> 安装完成!"
+echo "=> 最后请手动使用 rbenv init 来按照提示设置您的Shell环境"
 echo 
