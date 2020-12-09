@@ -5,7 +5,9 @@
 镜像提示：
 
 1. 🥳 rbenv每周五晚九点强制准时更新
-2. 🥰 ruby-build已由Gitee官方镜像管理
+2. 🥰 ruby-build已由Gitee官方镜像管理,每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
+
+更新请使用命令`rbenv-update`
 
 ## 安装
 ```shell

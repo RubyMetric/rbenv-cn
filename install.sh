@@ -21,6 +21,10 @@ echo "=> 使用Ruby China镜像"
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
 
+echo "=> 添加rbenv-update符号链接"
+chmod +x ./rbenv-update.sh
+sudo ln -s $PWD/rbenv-update.sh /usr/local/bin/rbenv-update
+
 echo "=> 安装完成!"
 echo "=> 最后请您手动使用 rbenv init 按照提示初始化(即把~/.rbenv/shims加入环境变量)"
 echo 
