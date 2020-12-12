@@ -15,7 +15,8 @@ echo -e "\n# rbenv config " >> ~/.bashrc
 echo -e "\n# rbenv config " >> ~/.zshrc
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+
 
 echo "=> 使用Ruby China镜像"
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
@@ -26,6 +27,12 @@ curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh -o rbe
 chmod +x ./rbenv-update.sh
 sudo mv ./rbenv-update.sh /usr/local/bin/rbenv-update
 
+
+# 自动添加，而不是需要用户手动输入rbenv init
+echo "eval \"\$(rbenv init -)\"" >> ~/.bashrc
+echo "eval \"\$(rbenv init -)\"" >> ~/.zshrc
 echo "=> 安装完成!"
-echo "=> 最后请您手动使用 rbenv init 按照提示初始化(即把~/.rbenv/shims加入环境变量)"
+
+
+echo "=> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\` 立即在本终端生效"
 echo 
