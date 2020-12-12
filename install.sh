@@ -34,5 +34,5 @@ echo "eval \"\$(rbenv init -)\"" >> ~/.zshrc
 echo "=> 安装完成!"
 
 
-echo "=> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\` 立即在本终端生效"
+echo "=> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\"\` 立即在本终端生效"
 echo 
