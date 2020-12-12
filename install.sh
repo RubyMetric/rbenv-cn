@@ -18,9 +18,16 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 #export PATH="$HOME/.rbenv/bin:$PATH"
 
 
-echo "=> 使用Ruby China镜像"
+# echo "=> 使用Ruby China镜像"
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
+
+
+echo "=> 安装rbenv-mirror,使用该命令切换至Ruby China镜像,请阅读rbenv-CN指南"
+curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-mirror.sh -o rbenv-mirror.sh
+chmod +x ./rbenv-mirror.sh
+sudo mv ./rbenv-mirror.sh /usr/local/bin/rbenv-mirror
+
 
 echo "=> 安装rbenv-update,升级更新请使用该命令"
 curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh -o rbenv-update.sh

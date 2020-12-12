@@ -14,5 +14,6 @@ sed -i '/eval \"\$(rbenv init -)\"/d' "${HOME}/.zshrc"
 
 echo "=> 删除rbenv-update"
 sudo rm  /usr/local/bin/rbenv-update
-
+echo "=> 删除rbenv-mirror"
+sudo rm  /usr/local/bin/rbenv-mirror
 echo "=> 卸载完成!"
