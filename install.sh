@@ -22,7 +22,7 @@ echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
 echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
 
 echo "=> 安装rbenv-update,升级更新请使用该命令"
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh
+curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh -o rbenv-update.sh
 chmod +x ./rbenv-update.sh
 sudo mv ./rbenv-update.sh /usr/local/bin/rbenv-update
 
