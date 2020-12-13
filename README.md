@@ -2,7 +2,7 @@
 
 详情参考 [Ruby China的帖子](https://ruby-china.org/topics/40693)
 
-尽善尽美的 `rbenv` (plus `ruby-build`)国内安装脚本,保证不需要任何外网,依然可以体验到最新的Ruby.
+`rbenv` (plus `ruby-build`)国内安装脚本,保证不需要任何外网,依然可以体验到最新的Ruby.
 
 已在本地和国内服务器上测试。
 
@@ -42,10 +42,3 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/install.sh)
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/uninstall.sh)"
 ```
-
-
-## 致谢
-
-1. 感谢Gitee官方提供 `ruby-build` 镜像
-2. 感谢Ruby China提供的Ruby镜像
-3. 感谢来自Ruby社区的每一个人
