@@ -16,7 +16,7 @@
 `ruby-build` 并不检查编译环境，需要手动先安装好。请先查看下方的编译依赖。
 [编译依赖](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment)
 
-## 工作流 (!important)
+## 使用方法
 
 ```bash
 # 除了rbenv,额外添加了两个命令 `rbenv-update` 和 `rbenv-mirror`
@@ -32,6 +32,9 @@ rbenv install -l 或 -L
 rbenv-mirror 3.0.0-preview2
 
 ```
+
+使用前后对比如图:
+![screenshot](./screenshot.png)
 
 ## 一键安装
 ```shell
