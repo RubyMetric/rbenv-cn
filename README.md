@@ -45,3 +45,12 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/install.sh)
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/uninstall.sh)"
 ```
+
+## Gem换源
+```bash
+gem source -r https://rubygems.org/ 
+gem source -a https://gems.ruby-china.com 
+
+# Bundler change source
+bundle config 'mirror.https://rubygems.org' 'https://gems.ruby-china.com' 
+```
