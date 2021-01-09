@@ -35,6 +35,12 @@ curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh -o rbe
 chmod +x ./rbenv-update.sh
 sudo mv ./rbenv-update.sh /usr/local/bin/rbenv-update
 
+echo "=> 安装rbenv-sudo,当需要使用sudo时,请使用该命令如 rbenv-sudo rails s -p 81"
+curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-sudo.sh -o rbenv-sudo.sh
+chmod +x ./rbenv-sudo.sh
+sudo mv ./rbenv-sudo.sh /usr/local/bin/rbenv-sudo
+
+
 
 # 自动添加，而不是需要用户手动输入rbenv init
 echo "eval \"\$(rbenv init -)\"" >> ~/.bashrc
