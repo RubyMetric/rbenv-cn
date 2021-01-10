@@ -30,7 +30,7 @@ rbenv-update
 # 查看支持的Ruby版本
 rbenv install -l 或 -L 
 
-# 此命令自动从Ruby China提供的镜像上下载某指定版本的Rub，y并接着运行编译等过程
+# 此命令自动从Ruby China提供的镜像上下载某指定版本的Ruby并接着运行编译等过程
 # 该命令用来替换常见的 rbenv install 3.0.0-preview2
 rbenv-mirror 3.0.0-preview2
 
@@ -40,6 +40,8 @@ rbenv-mirror 3.0.0-preview2
 rbenv-sudo rails s -p 81
 
 ```
+
+<br>
 
 使用前后对比如图:
 ![screenshot](./screenshot.png)
