@@ -92,9 +92,20 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
 ```
 
+<br>
+
 若您已经开始使用`rbenv-cn v0.1` (2022/3/20以前)，则需要先卸载之前的版本(使用下面的脚本)，事实上继续沿用`v0.1`依旧可以正常工作。
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/v0.1-uninstall.sh)"
+```
+
+<br>
+
+上述安装过程一般不会有问题，如果您发现异常，可以使用以下两种方式检查:
+```bash
+rbenv doctor 
+# 或 
+curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/bin/rbenv-doctor | bash
 ```
 
 <br>
