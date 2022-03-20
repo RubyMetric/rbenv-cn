@@ -3,11 +3,15 @@
 # Summary: 通过Ruby China cache安装指定版本的Ruby
 #
 # Usage: rbenv cninstall <version>
-#        rbenv cninstall -l|--list
-#        rbenv cninstall -L|--list-all
 #
-#   -l/--list          列出所有当前最新的稳定版本
-#   -L/--list-all      列出所有版本
+#   rbenv cninstall <version>     安装指定版本
+#   rbenv cninstall -l|--list     列出所有当前最新的稳定版本
+#   rbenv cninstall -L|--list-all 列出所有版本
+#
+# 显示本帮助:
+#   rbenv help cninstall
+#   rbenv cninstall -h
+#   rbenv cninstall --help   
 #
 
 # ------------------------------------------------------
@@ -30,6 +34,16 @@
 #   https://cache.ruby-china.com/pub//ruby/2.6/ruby-2.6.0.tar.bz2
 #
 
+
+# Provide rbenv completions
+if [ "$1" = "--complete" ]; then
+  echo -l
+  echo -L
+  # exec ruby-build --definitions
+  exec ruby-build --list
+fi
+
+
 # Set colored output for TTY
 if [ -t 1 ]; then
   color="\e[1;32m"
@@ -43,7 +57,15 @@ echo_colored() {
   printf "${color}%s${reset}\n" "$1"
 }
 
+# 让 rbenv-help 自己来找我们的help
+usage() {
+  rbenv-help cninstall 2>/dev/null
+  [ -z "$1" ] || exit "$1"
+}
 
+
+# Load shared library functions(in ruby-build)
+eval "$(ruby-build --lib)"
 parse_options "$@"
 for option in "${OPTIONS[@]}"; do
   case "$option" in
@@ -53,9 +75,9 @@ for option in "${OPTIONS[@]}"; do
   "l" | "list" )
     ruby-build --list
     {
+      echo_colored "rbenv-cn> 仅最新的稳定版被列出"
+      echo_colored "rbenv-cn> 请使用 'rbenv cninstall -L 或 --list-all' 显示所有可安装版本"
       echo
-      echo "仅有最新的稳定版被列出"
-      echo "请使用 'rbenv cninstall -L 或 --list-all' 显示所有可安装版本"
     } 1>&2
     exit
     ;;
@@ -66,12 +88,10 @@ for option in "${OPTIONS[@]}"; do
   esac
 done
 
-# 让 rbenv-help 自己来找我们的help
-usage() {
-  rbenv-help cninstall 2>/dev/null
-  [ -z "$1" ] || exit "$1"
-}
 
+#######################
+#    working code 
+#######################
 
 RUBY_BUILD_DIR=$HOME/.rbenv/plugins/ruby-build
 DEFINITIONS_DIR=$RUBY_BUILD_DIR/share/ruby-build
@@ -109,10 +129,11 @@ else
   if [ -f $DEFINITION ]; then
     echo_colored "rbenv-cn> 选中Ruby版本: $(basename $DEFINITION)"
     set_package_url $DEFINITION
-    rbenv install $(basename $DEFINITION)
+    # 这里用 rbenv-install 或 rbenv install 均可
+    rbenv-install $(basename $DEFINITION)
   else
-    echo_colored "rbenv-cn> 该版本Ruby不存在,请使用rbenv install -L 查看全部支持的版本"
-    rbenv install -l
+    echo_colored "rbenv-cn> 该版本Ruby不存在,请使用rbenv cninstall -L 查看全部支持的版本"
+    ruby-build --list
   fi
 fi
 
