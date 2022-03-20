@@ -26,6 +26,21 @@ echo_colored() {
   printf "${color}%s${reset}\n" "$1"
 }
 
+# Generated from https://ascii-generator.site/t/ 
+# using  slant (more compact fixed) 
+# others we can use: larry3d, smslant, standard, starwars, stop, stforek
+cat <<"RBENV-CN"
+          __                                             
+   _____ / /_   ___   ____  _   __        _____ ____ 
+  / ___// __ \ / _ \ / __ \| | / /______ / ___// __ \
+ / /   / /_/ //  __// / / /| |/ //_____// /__ / / / /
+/_/   /_.___/ \___//_/ /_/ |___/        \___//_/ /_/ 
+                                                           
+
+RBENV-CN
+
+
+
 echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像拉取rbenv"
 git clone -q https://gitee.com/RubyKids/rbenv-official.git "$HOME/.rbenv"
 

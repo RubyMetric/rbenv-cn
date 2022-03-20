@@ -4,6 +4,9 @@
 
 **Enhancements:**
 
+- Add banner
+- Add new installer script
+
 **Changes:**
 
 - Move general user scripts to tools
