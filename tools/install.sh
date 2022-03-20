@@ -66,9 +66,10 @@ git clone -q https://gitee.com/RubyKids/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv
 echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"
 echo -e "\n# rbenv config " >> ~/.bashrc
 echo -e "\n# rbenv config " >> ~/.zshrc
-# 不再需要
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+
+# 必须要这样，否则下面的 rbenv init - 会首先找不到命令
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 #export PATH="$HOME/.rbenv/bin:$PATH"
 
 

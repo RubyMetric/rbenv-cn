@@ -43,12 +43,12 @@ rm -rf $HOME/.rbenv
 echo_colored "rbenv-cn> 删除相关环境变量"
 sed -i '/rbenv config/d' "${HOME}/.bashrc"
 sed -i '/.rbenv\/bin:/d' "${HOME}/.bashrc"
-sed -i '/export RUBY_BUILD_MIRROR_URL=https/d' "${HOME}/.bashrc"
+#sed -i '/export RUBY_BUILD_MIRROR_URL=https/d' "${HOME}/.bashrc"
 sed -i '/eval \"\$(rbenv init -)\"/d' "${HOME}/.bashrc"
 
 sed -i '/rbenv config/d' "${HOME}/.zshrc"
 sed -i '/.rbenv\/bin:/d' "${HOME}/.zshrc"
-sed -i '/export RUBY_BUILD_MIRROR_URL=https/d' "${HOME}/.zshrc"
+#sed -i '/export RUBY_BUILD_MIRROR_URL=https/d' "${HOME}/.zshrc"
 sed -i '/eval \"\$(rbenv init -)\"/d' "${HOME}/.zshrc"
 
 echo_colored "rbenv-cn> 卸载完成!"
