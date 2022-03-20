@@ -4,14 +4,18 @@
 #
 # Usage: rbenv cninstall <version>
 #
+#   rbenv-cn v0.2
+#
 #   rbenv cninstall <version>     安装指定版本
 #   rbenv cninstall -l|--list     列出所有当前最新的稳定版本
 #   rbenv cninstall -L|--list-all 列出所有版本
+#   rbenv cninstall -v|--version  打印当前版本
 #
 # 显示本帮助:
 #   rbenv help cninstall
 #   rbenv cninstall -h
 #   rbenv cninstall --help   
+#
 #
 
 # ------------------------------------------------------
@@ -64,6 +68,16 @@ usage() {
 }
 
 
+rbenv-cn-version() {
+  cat << RBENV_CN_VERSION
+name:      rbenv-cn
+version:   0.2
+author:    ccmywish
+bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
+
+RBENV_CN_VERSION
+}
+
 # Load shared library functions(in ruby-build)
 eval "$(ruby-build --lib)"
 parse_options "$@"
@@ -83,6 +97,10 @@ for option in "${OPTIONS[@]}"; do
     ;;
   "L" | "list-all" )
     ruby-build --definitions
+    exit
+    ;;
+  "v" | "version" )
+    rbenv-cn-version
     exit
     ;;
   esac
