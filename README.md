@@ -49,12 +49,12 @@ rbenv sudo rails s -p 81
 
 ## 一键安装
 ```shell
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/install.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
 ```
 
 ## 一键卸载
 ```shell
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/uninstall.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
 ```
 
 ## Gem换源
