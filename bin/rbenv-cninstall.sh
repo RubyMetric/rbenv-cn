@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+#
+# Summary: 通过Ruby China cache安装指定版本的Ruby
+#
+# Usage: rbenv cninstall <version>
+#        rbenv cninstall -l|--list
+#        rbenv cninstall -L|--list-all
+#
+#   -l/--list          列出所有当前最新的稳定版本
+#   -L/--list-all      列出所有版本
+#
+
 # ------------------------------------------------------
 # File          : rbenv-cninstall.sh
 # Authors       : ccmywish <ccmywish@qq.com>
@@ -30,6 +41,35 @@ fi
 
 echo_colored() {
   printf "${color}%s${reset}\n" "$1"
+}
+
+
+parse_options "$@"
+for option in "${OPTIONS[@]}"; do
+  case "$option" in
+  "h" | "help" )
+    usage 0
+    ;;
+  "l" | "list" )
+    ruby-build --list
+    {
+      echo
+      echo "仅有最新的稳定版被列出"
+      echo "请使用 'rbenv cninstall -L 或 --list-all' 显示所有可安装版本"
+    } 1>&2
+    exit
+    ;;
+  "L" | "list-all" )
+    ruby-build --definitions
+    exit
+    ;;
+  esac
+done
+
+# 让 rbenv-help 自己来找我们的help
+usage() {
+  rbenv-help cninstall 2>/dev/null
+  [ -z "$1" ] || exit "$1"
 }
 
 
