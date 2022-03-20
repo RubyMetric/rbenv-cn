@@ -60,11 +60,15 @@ cd ~/.rbenv && src/configure > /dev/null && make -C src > /dev/null
 echo_colored "rbenv-cn> 从Gitee mirror官方镜像拉取ruby-build"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
+echo_colored "rbenv-cn> 从gitee.com/RubyKids拉取rbenv-cn作为插件"
+git clone -q https://gitee.com/RubyKids/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv-cn"
+
 echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"
 echo -e "\n# rbenv config " >> ~/.bashrc
 echo -e "\n# rbenv config " >> ~/.zshrc
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+# 不再需要
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 #export PATH="$HOME/.rbenv/bin:$PATH"
 
 
