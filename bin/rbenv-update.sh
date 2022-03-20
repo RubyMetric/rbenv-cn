@@ -11,7 +11,8 @@
 #   Update 3 parts:
 #     1. rbenv from RubyKis mirror 
 #     2. ruby-build from official Gitee mirror
-#     3. rbenv-cn plugins
+#     3. all plugins (include `rbenv-cn`) 
+#                               inside ~/.rbenv/plugins 
 # ------------------------------------------------------
 
 # Set colored output for TTY
