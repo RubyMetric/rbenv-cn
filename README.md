@@ -1,18 +1,22 @@
+# rbenv-cn
+
 ## 介绍
 
 详情参考 [Ruby China的帖子](https://ruby-china.org/topics/40693)
 
-`rbenv` (包含 `ruby-build`)国内安装脚本,保证不需要任何外网,依然可以使用最新版本的Ruby. 已在本地和国内服务器上测试。支持Bash, Zsh 暂不支持Fish, PowerShell.
+`rbenv`(包含 `ruby-build`)国内安装脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. 已在本地和国内服务器上测试。支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
 
 镜像提示：
 
 1. rbenv最低两周一次手动更新，此是否更新几乎不影响使用
 2. ruby-build已由Gitee官方管理(查看[最新状态](https://gitee.com/mirrors/ruby-build)),每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
 
+<br>
+
+## 使用
+
 `ruby-build` 并不检查编译环境，需要手动先安装好。请先查看下方的编译依赖。
 [编译依赖](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment)
-
-## 使用方法
 
 ```bash
 # 除了rbenv, 额外可以调用三个命令 
@@ -47,15 +51,24 @@ rbenv sudo rails s -p 81
 使用前后对比如图:
 ![screenshot](./screenshot.png)
 
-## 一键安装
+## 安装
+
+一键安装
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
 ```
 
-## 一键卸载
+一键卸载
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
 ```
+
+若您已经开始使用`rbenv-cn v0.1` (2022/3/20以前)，则需要先卸载之前的版本(使用下面的脚本)，事实上继续沿用`v0.1`依旧可以正常工作。
+```shell
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/v0.1-uninstall.sh)"
+```
+
+<br>
 
 ## Gem换源
 ```bash

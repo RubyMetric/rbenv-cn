@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-若您发现了新问题，新的想法以及可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在此[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读下面的内容。我将非常乐意接受任何对此项目的贡献与努力。
+若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读下面的内容。我将非常乐意接受任何对此项目的贡献与努力。
 
 <br>
 

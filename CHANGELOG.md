@@ -4,9 +4,10 @@
 
 **Enhancements:**
 
-- 统一的标准的风格
-- 添加帮助
-- 增加三个命令的补全功能
+- 完善的维护记录
+- 统一风格的代码
+- 紧密与rbenv集成，增加三个命令的补全功能，添加帮助
+- 将 rbenv-cn 作为整个插件
 - Add banner
 - Add new installer script
 
