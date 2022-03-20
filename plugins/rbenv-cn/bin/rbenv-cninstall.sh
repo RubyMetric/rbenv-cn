@@ -1,9 +1,23 @@
 #!/usr/bin/env bash
+# ------------------------------------------------------
+# File          : rbenv-cninstall.sh
+# Authors       : ccmywish <ccmywish@qq.com>
+# Created on    : <2020-12-07>
+# Last modified : <2022-03-20>
+#
+# rbenv-cninstall:
+#
+#   rbenv cninstall x.x.x
+#  
+#   Install a Ruby version via Ruby China cache
+# ------------------------------------------------------
 
-# EXAMPLE
-# https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.bz2
-# https://cache.ruby-china.com/pub//ruby/2.6/ruby-2.6.0.tar.bz2
-
+#
+# Link example:
+#
+#   https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.bz2
+#   https://cache.ruby-china.com/pub//ruby/2.6/ruby-2.6.0.tar.bz2
+#
 
 RUBY_BUILD_DIR=$HOME/.rbenv/plugins/ruby-build
 DEFINITIONS_DIR=$RUBY_BUILD_DIR/share/ruby-build
@@ -23,25 +37,25 @@ set_package_url() {
   
   export RUBY_BUILD_MIRROR_PACKAGE_URL=$mirror_tarball_url
   
-  echo "=> 已设置下载链接: $RUBY_BUILD_MIRROR_PACKAGE_URL"
+  echo "rbenv-cn> 设置下载链接: $RUBY_BUILD_MIRROR_PACKAGE_URL"
 } 
 
 
 
 if [ -z $1 ]; then
-  echo "=> 缺少Ruby版本参数!"
+  echo "=> 缺少Ruby版本作为参数!"
   echo "=> Usage:" 
-  echo "   rbenv-mirror <version>"
+  echo "   rbenv cninstall <version>"
   echo ""
   echo "=> Example:"
-  echo "   rbenv-mirror  2.7.2"
+  echo "   rbenv cninstall 3.1.1"
 else
   if [ -f $DEFINITION ]; then
-    echo "=> 选中Ruby版本: $(basename $DEFINITION)"
+    echo "rbenv-cn> 选中Ruby版本: $(basename $DEFINITION)"
     set_package_url $DEFINITION
     rbenv install $(basename $DEFINITION)
   else
-    echo "=> 该版本Ruby不存在,请使用rbenv install -L 查看全部支持的版本"
+    echo "rbenv-cn> 该版本Ruby不存在,请使用rbenv install -L 查看全部支持的版本"
     rbenv install -l
   fi
 fi
