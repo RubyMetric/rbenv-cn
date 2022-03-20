@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
-echo "rbenv-cn> Upgrade rbenv from RubyKids mirror"
-echo ""
+# Set colored output for TTY
+if [ -t 1 ]; then
+  color="\e[1;32m"
+  reset="\e[0m"
+else
+  color=""
+  reset=""
+fi
 
-git -C "$(rbenv root)" pull 
+echo_colored() {
+  printf "${color}%s${reset}\n" "$1"
+}
 
-echo ""
-
-echo "rbenv-cn> Upgrade ruby-build from official Gitee mirror"
-echo ""
-git -C "$(rbenv root)"/plugins/ruby-build pull 
-
-echo ""
-echo "rbenv-cn> 更新rbenv与ruby-build完成!"
+echo_colored "rbenv-cn> Deprecated, 请以后使用 'rbenv update' "
