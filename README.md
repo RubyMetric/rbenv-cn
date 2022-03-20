@@ -21,7 +21,7 @@
 
 ## 截图
 
-- `rbenv-cn` 安装过程
+- `rbenv-cn` 安装过程,如图所示仅需4秒。
 
 ![`rbenv-cn` 安装过程](./images/install.png)
 
@@ -35,25 +35,12 @@
 
 ### 测试状态
 
-**本机**
+- [Linux各发行版测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNS9)
+- [macOS测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNSI)
+- [WSL测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNS1)
+- [国内服务器测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNSO)
 
-- [x] Ubuntu 21.04 
-
-- [ ] 其他Linux发行版 (需要您帮助测试!!)
-
-- [ ] macOS (需要您帮助测试!!)
-
-**WSL**
-
-- [x] Ubuntu 20.04
-
-需要您帮助测试!
-
-**国内服务器**
-
-- [x] 腾讯云 Ubuntu 21.04
-
-需要您帮助测试!
+需要您帮助测试反馈情况，若您长时间使用`rbenv-cn`，请考虑成为维护者，谢谢。
 
 <br>
 
@@ -90,11 +77,6 @@ rbenv local 3.1.0
 rbenv sudo rails s -p 81
 
 ```
-
-<br>
-
-使用前后对比如图:
-![screenshot](./screenshot.png)
 
 <br>
 

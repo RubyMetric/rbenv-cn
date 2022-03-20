@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](#) (2022-03-20)
+## [v0.2](#) (2022-03-20)
 
 **Enhancements:**
 
