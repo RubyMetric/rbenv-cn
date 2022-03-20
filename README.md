@@ -1,10 +1,13 @@
 # rbenv-cn
 
-`rbenv-cn` 帮助您在任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等). 它是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. `rbenv-cn`安装仅需4秒。
+`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像(https://cache.ruby-china.com/)，帮助您在国内网络环境下的任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等)，保证不需要使用任何外网。
+
+`rbenv-cn`是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。
+
 
 详情参考 
 - [v0.1 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
-- [v0.2 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
+- [v0.2 rbenv-cn from Ruby China](https://ruby-china.org/topics/42239)
 
 <br>
 
@@ -14,8 +17,9 @@
 
 **镜像说明:**
 
-1. rbenv最低两周一次手动更新，此是否更新几乎不影响使用
-2. ruby-build已由Gitee官方管理(查看[最新状态](https://gitee.com/mirrors/ruby-build)),每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
+1. `rbenv`最低两周一次手动更新，此是否更新几乎不影响使用
+2. `ruby-build`已由Gitee官方管理(查看[最新状态](https://gitee.com/mirrors/ruby-build)),每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
+3. `ruby-build`的过程使用的是 [https://cache.ruby-china.com/](https://cache.ruby-china.com/) 即Ruby China官方的镜像
 
 <br>
 
@@ -33,7 +37,7 @@
 
 <br>
 
-### 测试状态
+## 测试状态
 
 - [Linux各发行版测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNS9)
 - [macOS测试](https://gitee.com/RubyKids/rbenv-cn/issues/I4YNSI)
