@@ -8,6 +8,10 @@
 
 - Move general user scripts to tools
 
+**Deprecated:**
+
+- Notice old users new commands
+
 <br>
 
 ## [v0.1](#) (2021-01-10)

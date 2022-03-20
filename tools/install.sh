@@ -1,16 +1,41 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# ------------------------------------------------------
+# File          : install.sh
+# Authors       : ccmywish <ccmywish@qq.com>
+# Created on    : <2020-12-10>
+# Last modified : <2022-03-20>
+#
+# install:
+#
+#   rbenv-cn installer script
+#
+# ------------------------------------------------------
+
 set -e
 
-echo "=> Git clone rbenv"
+# Set colored output for TTY
+if [ -t 1 ]; then
+  color="\e[1;32m"
+  reset="\e[0m"
+else
+  color=""
+  reset=""
+fi
+
+echo_colored() {
+  printf "${color}%s${reset}\n" "$1"
+}
+
+echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像拉取rbenv"
 git clone -q https://gitee.com/RubyKids/rbenv-official.git "$HOME/.rbenv"
 
-echo "=> 尝试编译动态Bash扩展来加速rbenv. 若失败不要担心，rbenv仍然可以正常工作"
+echo_colored "rbenv-cn> 尝试编译动态Bash扩展来加速rbenv. 若失败不要担心，rbenv仍然可以正常工作"
 cd ~/.rbenv && src/configure > /dev/null && make -C src > /dev/null
 
-echo "=> Git clone ruby-build"
+echo_colored "rbenv-cn> 从Gitee mirror官方镜像拉取ruby-build"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
-echo "=> 添加rbenv命令至环境变量(Bash,Zsh)"
+echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"
 echo -e "\n# rbenv config " >> ~/.bashrc
 echo -e "\n# rbenv config " >> ~/.zshrc
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -24,29 +49,11 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 # echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
 
 
-echo "=> 安装rbenv-mirror,使用该命令切换至Ruby China镜像,请阅读rbenv-CN指南"
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-mirror.sh -o rbenv-mirror.sh
-chmod +x ./rbenv-mirror.sh
-sudo mv ./rbenv-mirror.sh /usr/local/bin/rbenv-mirror
-
-
-echo "=> 安装rbenv-update,升级更新请使用该命令"
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-update.sh -o rbenv-update.sh
-chmod +x ./rbenv-update.sh
-sudo mv ./rbenv-update.sh /usr/local/bin/rbenv-update
-
-echo "=> 安装rbenv-sudo,当需要使用sudo时,请使用该命令如 rbenv-sudo rails s -p 81"
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/master/rbenv-sudo.sh -o rbenv-sudo.sh
-chmod +x ./rbenv-sudo.sh
-sudo mv ./rbenv-sudo.sh /usr/local/bin/rbenv-sudo
-
-
-
 # 自动添加，而不是需要用户手动输入rbenv init
 echo "eval \"\$(rbenv init -)\"" >> ~/.bashrc
 echo "eval \"\$(rbenv init -)\"" >> ~/.zshrc
-echo "=> 安装完成!"
+echo_colored "rbenv-cn> 安装完成!"
 
 
-echo "=> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\"\` 立即在本终端生效"
+echo_colored "rbenv-cn> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\"\` 立即在本终端生效"
 echo 
