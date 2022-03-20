@@ -1,15 +1,45 @@
 # rbenv-cn
 
-## 介绍
+`rbenv-cn` 帮助您在任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等). 它是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. 
 
-详情参考 [Ruby China的帖子](https://ruby-china.org/topics/40693)
+详情参考 
+- [v0.1 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
+- [v0.2 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
 
-`rbenv`(包含 `ruby-build`)国内安装脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. 已在本地和国内服务器上测试。支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
+<br>
 
-镜像提示：
+## 功能
+
+支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
+
+**镜像说明:**
 
 1. rbenv最低两周一次手动更新，此是否更新几乎不影响使用
 2. ruby-build已由Gitee官方管理(查看[最新状态](https://gitee.com/mirrors/ruby-build)),每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
+
+<br>
+
+### 测试状态
+
+**本机**
+
+- [x] Ubuntu 21.04 
+
+- [ ] 其他Linux发行版 (需要您帮助测试!!)
+
+- [ ] macOS (需要您帮助测试!!)
+
+**WSL**
+
+- [x] Ubuntu 20.04
+
+需要您帮助测试!
+
+**国内服务器**
+
+- [x] 腾讯云 Ubuntu 21.04
+
+需要您帮助测试!
 
 <br>
 
@@ -19,16 +49,17 @@
 [编译依赖](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment)
 
 ```bash
-# 除了rbenv, 额外可以调用三个命令 
+# 在rbenv的基础上，可以调用三个子命令 
 # 1. `rbenv cninstall` 
 # 2. `rbenv update`
 # 3. `rbenv sudo`
 
-# 当有新Ruby版本出现时,使用rbenv update来同时更新 rbenv 和 ruby-build 插件
+# 当有新Ruby版本出现时, 使用rbenv update来同时更新 
+# rbenv 以及 ruby-build, rbenv-cn 在内的所有插件
 rbenv update
 
 # 查看支持的Ruby版本
-rbenv install -l 或 -L 
+rbenv cninstall -l 或 -L 
 
 # 此命令自动从Ruby China提供的镜像上下载某指定版本的Ruby并接着运行编译等过程
 # 该命令用来替换常见的 rbenv install 3.0.0-preview2
@@ -40,8 +71,8 @@ rbenv global 3.1.0
 # 生成 .ruby-version 文件，设置在本目录下使用 3.1.0 版本(会覆盖全局设置)
 rbenv local 3.1.0
 
-# sudo rails s -p 81 等需要更高权限的操作无法执行, 这本是RVM和rbenv共同的问题
-# 后来rbenv默认添加了以下子命令，来替换 sudo 即:
+# sudo rails s -p 81 等需要更高权限的操作无法执行, 这是RVM和rbenv共同的问题
+# 因此需要使用以下命令来替换 sudo 即:
 rbenv sudo rails s -p 81
 
 ```
@@ -50,6 +81,8 @@ rbenv sudo rails s -p 81
 
 使用前后对比如图:
 ![screenshot](./screenshot.png)
+
+<br>
 
 ## 安装
 
