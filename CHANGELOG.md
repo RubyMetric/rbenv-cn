@@ -1,5 +1,15 @@
 # Changelog
 
+## [Unreleased](#) (2022-03-20)
+
+**Enhancements:**
+
+**Changes:**
+
+- Move general user scripts to tools
+
+<br>
+
 ## [v0.1](#) (2021-01-10)
 
 - Add rbenv-sudo from third party with a tiny fix
