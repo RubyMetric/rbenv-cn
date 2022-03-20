@@ -4,6 +4,9 @@
 
 **Enhancements:**
 
+- 统一的标准的风格
+- 添加帮助
+- 增加三个命令的补全功能
 - Add banner
 - Add new installer script
 
