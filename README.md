@@ -1,6 +1,6 @@
 # rbenv-cn
 
-`rbenv-cn` 帮助您在任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等). 它是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. 
+`rbenv-cn` 帮助您在任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等). 它是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，保证不需要任何外网，依然可以使用最新版本的Ruby. `rbenv-cn`安装仅需4秒。
 
 详情参考 
 - [v0.1 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
@@ -16,6 +16,20 @@
 
 1. rbenv最低两周一次手动更新，此是否更新几乎不影响使用
 2. ruby-build已由Gitee官方管理(查看[最新状态](https://gitee.com/mirrors/ruby-build)),每天更新,这是管理Ruby版本的真正仓库,所以不用担心更新不及时
+
+<br>
+
+## 截图
+
+- `rbenv-cn` 安装过程
+
+![`rbenv-cn` 安装过程](./images/install.png)
+
+<br>
+
+- `rbenv cninstall <version>` 安装Ruby过程
+
+![`rbenv cninstall` 安装Ruby过程](./images/cninstall.png)
 
 <br>
 
