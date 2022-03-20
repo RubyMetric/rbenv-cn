@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
+#
+# Summary: 更新三部分
+#
+# Usage: rbenv update
+#
+# 将更新3个部分
+#   1. 从gitee.com/RubyKis镜像更新 rbenv
+#   2. 从Gitee mirror官方镜像更新 ruby-build
+#   3. 更新包含 `rbenv-cn` 在内的所有插件(位于 ~/.rbenv/plugins)
+#
+# 显示本帮助:
+#   rbenv help update
+#   rbenv update --help   
+#
+
 # ------------------------------------------------------
 # File          : rbenv-update.sh
 # Authors       : ccmywish <ccmywish@qq.com>
@@ -8,11 +23,7 @@
 #
 # rbenv-update:
 #
-#   Update 3 parts:
-#     1. rbenv from RubyKis mirror 
-#     2. ruby-build from official Gitee mirror
-#     3. all plugins (include `rbenv-cn`) 
-#                               inside ~/.rbenv/plugins 
+#   See summary and usage above
 # ------------------------------------------------------
 
 # Set colored output for TTY

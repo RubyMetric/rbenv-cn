@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+#
+# Summary: 使用更高权限运行命令
+#
+# Usage: rbenv sudo <command>
+#
+# 使用root权限运行 command 
+#
+# 显示本帮助:
+#   rbenv help sudo
+#   rbenv sudo --help   
+#
 
 # Copyright (C) 2012, Dan Carley
 # Copyright (C) 2021, ccmywish
