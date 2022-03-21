@@ -1,6 +1,6 @@
 # rbenv-cn
 
-`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像(https://cache.ruby-china.com/)，帮助您在国内网络环境下的任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等)，保证不需要使用任何外网。
+`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像 (https://cache.ruby-china.com/)，帮助您在国内网络环境下的任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等)，保证不需要使用任何外网。
 
 `rbenv-cn`是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。
 
