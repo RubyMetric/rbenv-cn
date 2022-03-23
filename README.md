@@ -2,7 +2,7 @@
 
 `rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)，帮助您在国内网络环境下的任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等)，保证不需要使用任何外网。
 
-`rbenv-cn`是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。
+`rbenv-cn`是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。**注意! Ruby用户可以直接通过RubyGems来安装，因此以后您只需要记住本项目的名字即可**，安装方式请阅读下述内容。
 
 
 详情参考 
@@ -86,13 +86,24 @@ rbenv sudo rails s -p 81
 
 ## 安装
 
-一键安装
-```shell
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
+如果您是Ruby用户，您甚至可以更简单
+```bash
+# 安装此Gem
+gem install rbenv-cn
+
+# 安装
+rbenv-cn install
+
+# 卸载
+rbenv-cn uninstall
 ```
 
-一键卸载
+或通过下面的安装脚本一键安装/卸载
 ```shell
+# 安装
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
+
+# 卸载
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
 ```
 
