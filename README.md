@@ -13,7 +13,7 @@
 
 ## 功能
 
-支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，甚至，若您想要参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
+支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，或者您想直接参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
 
 **镜像说明:**
 
