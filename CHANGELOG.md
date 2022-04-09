@@ -13,6 +13,7 @@
 ### Enhancements:
 
 - Fix color function in rbenv-update
+- Remove duplicate update in ruby-build
 
 <br>
 

@@ -48,6 +48,7 @@ plugin_update() {
   if is_git_repo; then
     echo_colored "rbenv-cn> 更新 $1 ..."
     git pull --no-rebase --ff
+    echo
   else
     echo_colored "rbenv-cn> 跳过 $1; 不是一个Git仓库"
   fi
@@ -56,8 +57,6 @@ plugin_update() {
 echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像更新rbenv"
 git -C $RBENV_ROOT pull 
 
-echo_colored "rbenv-cn> 从Gitee mirror官方镜像更新ruby-build"
-git -C "$RBENV_ROOT"/plugins/ruby-build pull 
 echo
 
 # If no match, just remove the word, rather than see it as a file called *
