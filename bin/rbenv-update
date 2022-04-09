@@ -41,16 +41,16 @@ echo_colored() {
 
 
 is_git_repo() {
-  command git remote -v 2>/dev/null 
+  command git remote -v &> /dev/null 
 }
 
 plugin_update() {
   if is_git_repo; then
-    echo_colored "rbenv-cn> 更新 $1 ..."
+    echo_colored "rbenv-cn> 更新$1 ..."
     git pull --no-rebase --ff
     echo
   else
-    echo_colored "rbenv-cn> 跳过 $1; 不是一个Git仓库"
+    echo_colored "rbenv-cn> 跳过$1; 不是一个Git仓库"
   fi
 }
 
@@ -68,4 +68,4 @@ for plugin in "$RBENV_ROOT"/plugins/*; do
 done
 shopt -u nullglob
 
-echo_colored "rbenv-cn> rbenv 以及所有插件更新完成!"
+echo_colored "rbenv-cn> rbenv 以及所有插件更新完成"

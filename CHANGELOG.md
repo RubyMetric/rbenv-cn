@@ -12,8 +12,12 @@
 
 ### Enhancements:
 
+- Remove duplicate update on ruby-build
+- Not show git remote address
+
+### Bug fixes:
+
 - Fix color function in rbenv-update
-- Remove duplicate update in ruby-build
 
 <br>
 
