@@ -1,10 +1,14 @@
 # Changelog
 
-## [Unreleased](#) (2022-03-20)
+## [Unreleased](#) (2022-04-09)
 
 ### New features:
 
 - Install from RubyGems
+
+### Enhancements:
+
+- Fix color function in rbenv-update
 
 <br>
 
