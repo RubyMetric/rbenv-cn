@@ -46,11 +46,11 @@ is_git_repo() {
 
 plugin_update() {
   if is_git_repo; then
-    echo_colored "rbenv-cn> 更新$1 ..."
+    echo_colored "rbenv-cn> 更新插件$1 ..."
     git pull --no-rebase --ff
     echo
   else
-    echo_colored "rbenv-cn> 跳过$1; 不是一个Git仓库"
+    echo_colored "rbenv-cn> 跳过插件$1; 不是一个Git仓库"
   fi
 }
 
