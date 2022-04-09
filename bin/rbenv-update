@@ -19,7 +19,7 @@
 # Authors       : ccmywish <ccmywish@qq.com>
 #                 Konstantin Haase <github@rkh.im>
 # Created on    : <2020-12-09>
-# Last modified : <2022-03-20>
+# Last modified : <2022-04-09>
 #
 # rbenv-update:
 #
@@ -46,10 +46,10 @@ is_git_repo() {
 
 plugin_update() {
   if is_git_repo; then
-    print_colored "rbenv-cn> 更新 $1 ..."
+    echo_colored "rbenv-cn> 更新 $1 ..."
     git pull --no-rebase --ff
   else
-    print_colored "rbenv-cn> 跳过 $1; 不是一个Git仓库"
+    echo_colored "rbenv-cn> 跳过 $1; 不是一个Git仓库"
   fi
 }
 
@@ -69,4 +69,4 @@ for plugin in "$RBENV_ROOT"/plugins/*; do
 done
 shopt -u nullglob
 
-echo_colored "rbenv-cn> 1.rbenv 2.ruby-build 3.rbenv-cn 4.其他插件 全部更新完成!"
+echo_colored "rbenv-cn> rbenv 以及所有插件更新完成!"
