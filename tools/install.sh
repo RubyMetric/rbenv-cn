@@ -13,7 +13,7 @@
 
 set -e
 
-RBENV_CN_VERSION="0.2"
+RBENV_CN_VERSION="0.3"
 
 # Generated from https://ascii-generator.site/t/ 
 # using  slant (more compact fixed) 

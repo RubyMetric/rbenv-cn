@@ -2,6 +2,10 @@
 
 ## [Unreleased](#) (2022-04-09)
 
+<br>
+
+## [v0.3](#) (2022-04-09)
+
 ### New features:
 
 - Install from RubyGems

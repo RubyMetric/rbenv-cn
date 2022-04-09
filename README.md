@@ -1,13 +1,8 @@
 # rbenv-cn
 
-`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)，帮助您在国内网络环境下的任何类Unix系统上编译，安装任何版本的Ruby(包括CRuby, mruby, JRuby等)，保证不需要使用任何外网。
+`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)，帮助您在国内网络环境下的类Unix系统上编译，安装多版本Ruby，保证不需要使用任何外网(目前只能保证CRuby, 而 mruby, JRuby 等不确定)。
 
-`rbenv-cn`是作为`rbenv`的一个插件来工作的，它同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。**注意! Ruby用户可以直接通过RubyGems来安装，因此以后您只需要记住本项目的名字即可**，安装方式请阅读下述内容。
-
-
-详情参考 
-- [v0.1 rbenv-cn from Ruby China](https://ruby-china.org/topics/40693)
-- [v0.2 rbenv-cn from Ruby China](https://ruby-china.org/topics/42239)
+`rbenv-cn`是作为`rbenv`的一个插件来工作的，其同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。**注意! Ruby用户可以直接通过RubyGems来安装，因此您只需要记住rbenv-cn这个名字即可**，安装方式请阅读下述内容。
 
 <br>
 
@@ -67,8 +62,8 @@ rbenv update
 rbenv cninstall -l 或 -L 
 
 # 此命令自动从Ruby China提供的镜像上下载某指定版本的Ruby并接着运行编译等过程
-# 该命令用来替换常见的 rbenv install 3.0.0-preview2
-rbenv cninstall 3.0.0-preview2
+# 该命令用来替换常见的 rbenv install 3.2.0-preview1
+rbenv cninstall 3.2.0-preview1
 
 # 设置全局使用 3.1.0 版本
 rbenv global 3.1.0
@@ -86,7 +81,7 @@ rbenv sudo rails s -p 81
 
 ## 安装
 
-如果您是Ruby用户，您甚至可以更简单
+如果您的系统已经安装Ruby，您可以更简单
 ```bash
 # 安装此Gem
 gem install rbenv-cn
@@ -109,7 +104,7 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninsta
 
 <br>
 
-若您已经开始使用`rbenv-cn v0.1` (2022/3/20以前)，则需要先卸载之前的版本(使用下面的脚本)，事实上继续沿用`v0.1`依旧可以正常工作。
+若您已经开始使用 `rbenv-cn v0.1` (2022/3/20以前)，则需要先卸载之前的版本(使用下面的脚本)，事实上继续沿用 `v0.1` 依旧可以正常工作。
 ```shell
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/v0.1-uninstall.sh)"
 ```
