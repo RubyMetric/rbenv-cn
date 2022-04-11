@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "rbenv-cn"
-  s.version = "1.0"
-  s.date = "2022-03-23"
+  s.version = "1.1.0"
+  s.date = "2022-04-11"
   
   s.summary = "rbenv-cn: install `rbenv` and `rbenv-cn` plugin quikly for Chinese users. "
 
