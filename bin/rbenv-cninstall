@@ -4,7 +4,7 @@
 #
 # Usage: rbenv cninstall <version>
 #
-#   rbenv-cn v0.3
+#   rbenv-cn v0.3.0
 #
 #   rbenv cninstall <version>     安装指定版本
 #   rbenv cninstall -l|--list     列出所有当前最新的稳定版本
@@ -71,7 +71,7 @@ usage() {
 rbenv-cn-version() {
   cat << RBENV_CN_VERSION
 name:      rbenv-cn
-version:   0.3
+version:   0.3.0
 author:    ccmywish
 bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
 
