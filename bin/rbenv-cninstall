@@ -4,8 +4,6 @@
 #
 # Usage: rbenv cninstall <version>
 #
-#   rbenv-cn v0.3.0
-#
 #   rbenv cninstall <version>     安装指定版本
 #   rbenv cninstall -l|--list     列出所有当前最新的稳定版本
 #   rbenv cninstall -L|--list-all 列出所有版本
@@ -16,13 +14,12 @@
 #   rbenv cninstall -h
 #   rbenv cninstall --help   
 #
-#
 
 # ------------------------------------------------------
 # File          : rbenv-cninstall.sh
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2020-12-07>
-# Last modified : <2022-03-20>
+# Last modified : <2022-04-26>
 #
 # rbenv-cninstall:
 #
@@ -35,7 +32,7 @@
 # Link example:
 #
 #   https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.bz2
-#   https://cache.ruby-china.com/pub//ruby/2.6/ruby-2.6.0.tar.bz2
+#   https://cache.ruby-china.com/pub/ruby/2.6/ruby-2.6.0.tar.bz2
 #
 
 

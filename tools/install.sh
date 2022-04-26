@@ -3,7 +3,7 @@
 # File          : install.sh
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2022-03-20>
+# Last modified : <2022-04-26>
 #
 # install:
 #
@@ -13,7 +13,7 @@
 
 set -e
 
-RBENV_CN_VERSION="0.3.0"
+RBENV_CN_VERSION="0.3.1"
 
 # Generated from https://ascii-generator.site/t/ 
 # using  slant (more compact fixed) 
@@ -30,10 +30,10 @@ RBENV-CN
 cat <<PLUGIN_INFO
 Works as a rbenv plugin:
   
-  name:      rbenv-cn
-  version:   ${RBENV_CN_VERSION}
-  author:    ccmywish
-  bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
+  Name:      rbenv-cn
+  Version:   ${RBENV_CN_VERSION}
+  Bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
+  Thanks:    Ruby China, UpYun CDN and Gitee
 
 PLUGIN_INFO
 
