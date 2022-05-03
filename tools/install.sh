@@ -3,7 +3,7 @@
 # File          : install.sh
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2022-04-26>
+# Last modified : <2022-05-03>
 #
 # install:
 #
@@ -86,4 +86,7 @@ echo_colored "rbenv-cn> 安装完成!"
 
 
 echo_colored "rbenv-cn> 请您重启终端或使用 \`export PATH=\"\$HOME/.rbenv/bin:\$PATH\"\` 立即在本终端生效"
+
+echo_colored "rbenv-cn> 在安装Ruby前请确保您的系统已经安装了编译所需的所有依赖:"
+echo_colored "=> https://github.com/rbenv/ruby-build/wiki#suggested-build-environment"
 echo 
