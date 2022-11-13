@@ -6,6 +6,10 @@
 
 <br>
 
+> **如果您长时间使用、高度依赖本项目，请考虑捐赠作者(本页最下方)，以使作者能够花更多时间在开源项目上，谢谢您的支持。**
+
+<br>
+
 ## 功能
 
 支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，或者您想直接参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
@@ -100,13 +104,6 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install
 
 # 卸载
 bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
-```
-
-<br>
-
-若您已经开始使用 `rbenv-cn v0.1` (2022/3/20以前)，则需要先卸载之前的版本(使用下面的脚本)，事实上继续沿用 `v0.1` 依旧可以正常工作。
-```shell
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/v0.1-uninstall.sh)"
 ```
 
 <br>
