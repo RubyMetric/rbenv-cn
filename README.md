@@ -1,12 +1,29 @@
+<div align="center">
+
 # rbenv-cn
 
-`rbenv-cn` 同时利用Gitee官方提供的ruby-build镜像与Ruby China官方镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)，帮助您在国内网络环境下的类Unix系统上编译，安装多版本Ruby，保证不需要使用任何外网(目前只能保证CRuby, 而 mruby, JRuby 等不确定)。
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ccmywish)
 
-`rbenv-cn`是作为`rbenv`的一个插件来工作的，其同时也是`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，`rbenv-cn`安装仅需4秒。**注意! Ruby用户可以直接通过RubyGems来安装，因此您只需要记住rbenv-cn这个名字即可**，安装方式请阅读下述内容。
+</div>
+
+## 概述
+
+`rbenv-cn` 使用
+1. Gitee官方提供的ruby-build镜像
+2. Ruby China官方镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)
+
+帮助您在国内网络环境下的类Unix系统上编译，安装多版本Ruby，保证不需要使用任何外网(目前只能保证CRuby, 而 mruby, JRuby 等不支持)。
+
+本项目起了两个作用
+
+1. 作为`rbenv`(包含`ruby-build`)的国内一键安装/卸载脚本，安装仅需4秒
+2. `rbenv-cn`作为`rbenv`的一个标准插件(包含4个命令)来工作，切换使用国内镜像来下载源代码
+
+**注意! Ruby用户可以直接通过RubyGems来安装，因此您只需要记住rbenv-cn这个名字即可**，安装方式请阅读下述内容。
 
 <br>
 
-> **如果您长时间使用本项目，请考虑捐赠作者(本页最下方)，谢谢。**
+> **如果您长时间使用本项目，请考虑捐赠作者(本页最下方)，谢谢**
 
 <br>
 
