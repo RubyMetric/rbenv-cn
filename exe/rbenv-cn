@@ -3,15 +3,14 @@
 # File          : rbenv-cn.rb
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2022-03-23>
-# Last modified : <2022-03-23>
+# Last modified : <2023-02-08>
 #
 # rbenv-cn:
 #
-#   install `rbenv` and `rbenv-cn` plugin quikly 
+#   install `rbenv` and `rbenv-cn` plugin quickly
 # for Chinese users.
 #
 # ------------------------------------------------------
-
 
 def install
   exec <<EOF
@@ -23,24 +22,24 @@ def uninstall
   exec <<EOF
   bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
 EOF
-  
 end
+
 
 def help
   puts <<-EOH
-rbenv-cn: 
-    
+rbenv-cn:
+
     该Gem仅用于帮助您快速安装/卸载`rbenv-cn`
     https://gitee.com/RubyKids/rbenv-cn
 
-usage: 
+usage:
 
     rbenv-cn install   => 安装
     rbenv-cn uninstall => 卸载
 
 EOH
-
 end
+
 
 if ARGV.empty?
   help
