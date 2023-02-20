@@ -3,36 +3,36 @@
 # File          : install.sh
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2022-05-03>
+# Last modified : <2023-02-20>
 #
 # install:
 #
-#   rbenv-cn installer script
-#
+#            rbenv-cn installer script
 # ------------------------------------------------------
 
 set -e
 
-RBENV_CN_VERSION="0.3.1"
+RBENV_CN_VERSION="0.3.2"
 
-# Generated from https://ascii-generator.site/t/ 
-# using  slant (more compact fixed) 
+# Generated from https://ascii-generator.site/t/
+# using  slant (more compact fixed)
 # others we can use: larry3d, smslant, standard, starwars, stop, stforek
 cat <<"RBENV-CN"
-          __                                             
-   _____ / /_   ___   ____  _   __      _____ ____ 
+          __
+   _____ / /_   ___   ____  _   __      _____ ____
   / ___// __ \ / _ \ / __ \| | / /____ / ___// __ \
  / /   / /_/ //  __// / / /| |/ //___// /__ / / / /
-/_/   /_.___/ \___//_/ /_/ |___/      \___//_/ /_/ 
-                                                           
+/_/   /_.___/ \___//_/ /_/ |___/      \___//_/ /_/
+
 RBENV-CN
 
 cat <<PLUGIN_INFO
 Works as a rbenv plugin:
-  
+
+  Author:    ccmywish
   Name:      rbenv-cn
   Version:   ${RBENV_CN_VERSION}
-  Bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
+  Bug track: https://gitee.com/RubyKids/rbenv-cn/issues
   Thanks:    Ruby China, UpYun CDN and Gitee
 
 PLUGIN_INFO
@@ -53,9 +53,6 @@ echo_colored() {
 
 echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像拉取rbenv"
 git clone -q https://gitee.com/RubyKids/rbenv-official.git "$HOME/.rbenv"
-
-echo_colored "rbenv-cn> 尝试编译动态Bash扩展来加速rbenv. 若失败不要担心，rbenv仍然可以正常工作"
-cd ~/.rbenv && src/configure > /dev/null && make -C src > /dev/null
 
 echo_colored "rbenv-cn> 从Gitee mirror官方镜像拉取ruby-build"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
@@ -89,4 +86,4 @@ echo_colored "rbenv-cn> 请您重启终端或使用 \`export PATH=\"\$HOME/.rben
 
 echo_colored "rbenv-cn> 在安装Ruby前请确保您的系统已经安装了编译所需的所有依赖:"
 echo_colored "=> https://github.com/rbenv/ruby-build/wiki#suggested-build-environment"
-echo 
+echo
