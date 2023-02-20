@@ -1,6 +1,18 @@
 # Changelog
 
-## [Unreleased](#) (2022-05-03)
+## [Unreleased](#) (2023-02-20)
+
+<br>
+
+## [v0.3.2](#) (2023-02-20)
+
+### Enhancements:
+
+- Remove bash native extension in installation. See: https://github.com/rbenv/rbenv/pull/1428
+
+<br>
+
+## [v0.3.1](#) (2022-05-03)
 
 ### Enhancements:
 

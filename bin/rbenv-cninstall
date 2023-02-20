@@ -12,7 +12,7 @@
 # 显示本帮助:
 #   rbenv help cninstall
 #   rbenv cninstall -h
-#   rbenv cninstall --help   
+#   rbenv cninstall --help
 #
 
 # ------------------------------------------------------
@@ -24,7 +24,7 @@
 # rbenv-cninstall:
 #
 #   rbenv cninstall x.x.x
-#  
+#
 #   Install a Ruby version via Ruby China cache
 # ------------------------------------------------------
 
@@ -68,9 +68,9 @@ usage() {
 rbenv-cn-version() {
   cat << RBENV_CN_VERSION
 name:      rbenv-cn
-version:   0.3.0
+version:   0.3.2
 author:    ccmywish
-bug_track: https://gitee.com/RubyKids/rbenv-cn/issues
+bug track: https://gitee.com/RubyKids/rbenv-cn/issues
 
 RBENV_CN_VERSION
 }
@@ -105,7 +105,7 @@ done
 
 
 #######################
-#    working code 
+#    working code
 #######################
 
 RUBY_BUILD_DIR=$HOME/.rbenv/plugins/ruby-build
@@ -123,18 +123,18 @@ set_package_url() {
 
   mirror_tarball_url=${tarball_url/ruby-lang.org/ruby-china.com}
   mirror_tarball_url=${mirror_tarball_url:1}
-  
+
   export RUBY_BUILD_MIRROR_PACKAGE_URL=$mirror_tarball_url
-  
+
   echo_colored "rbenv-cn> 设置下载链接: $RUBY_BUILD_MIRROR_PACKAGE_URL"
-} 
+}
 
 
 
 if [ -z $1 ]; then
   echo_colored "rbenv-cn> 缺少Ruby版本号作为参数!"
   echo
-  echo_colored "=> Usage:" 
+  echo_colored "=> Usage:"
   echo_colored "  rbenv cninstall <version>"
   echo
   echo_colored "=> Example:"

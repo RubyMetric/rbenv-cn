@@ -29,9 +29,9 @@ RBENV-CN
 cat <<PLUGIN_INFO
 Works as a rbenv plugin:
 
-  Author:    ccmywish
   Name:      rbenv-cn
   Version:   ${RBENV_CN_VERSION}
+  Author:    ccmywish
   Bug track: https://gitee.com/RubyKids/rbenv-cn/issues
   Thanks:    Ruby China, UpYun CDN and Gitee
 
