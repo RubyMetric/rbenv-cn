@@ -3,7 +3,7 @@
 # File          : install.sh
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2023-02-20>
+# Last modified : <2023-05-01>
 #
 # install:
 #
@@ -51,13 +51,13 @@ echo_colored() {
   printf "${color}%s${reset}\n" "$1"
 }
 
-echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像拉取rbenv"
-git clone -q https://gitee.com/RubyKids/rbenv-official.git "$HOME/.rbenv"
+echo_colored "rbenv-cn> Pulling 'rbenv' from official Gitee 'mirrors_rbenv' ..."
+git clone -q https://gitee.com/mirrors_rbenv/rbenv "$HOME/.rbenv"
 
-echo_colored "rbenv-cn> 从Gitee mirror官方镜像拉取ruby-build"
+echo_colored "rbenv-cn> Pulling 'ruby-build' from official Gitee 'mirrors' ..."
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
-echo_colored "rbenv-cn> 从gitee.com/RubyKids拉取rbenv-cn作为插件"
+echo_colored "rbenv-cn> Pulling 'rbenv-cn' from 'RubyKids' as a plugin ..."
 git clone -q https://gitee.com/RubyKids/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv-cn"
 
 echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"
