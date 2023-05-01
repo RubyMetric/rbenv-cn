@@ -68,7 +68,7 @@ usage() {
 rbenv-cn-version() {
   cat << RBENV_CN_VERSION
 name:      rbenv-cn
-version:   0.3.2
+version:   0.3.3
 author:    ccmywish
 bug track: https://gitee.com/RubyKids/rbenv-cn/issues
 

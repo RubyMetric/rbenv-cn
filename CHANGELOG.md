@@ -1,6 +1,14 @@
 # Changelog
 
-## [Unreleased](#) (2023-02-20)
+## [Unreleased](#) (2023-05-02)
+
+<br>
+
+## [v0.3.3](#) (2023-05-02)
+
+### Enhancements:
+
+- Change upstream `rbenv` source repo to [official Gitee managed repo](https://gitee.com/mirrors_rbenv/rbenv).
 
 <br>
 
