@@ -5,13 +5,13 @@
 # Usage: rbenv update
 #
 # 将更新3个部分
-#   1. 从gitee.com/RubyKis镜像更新 rbenv
-#   2. 从Gitee mirror官方镜像更新 ruby-build
+#   1. 从Gitee mirrors_rbenv 更新 rbenv
+#   2. 从Gitee mirrors       更新 ruby-build
 #   3. 更新包含 `rbenv-cn` 在内的所有插件(位于 ~/.rbenv/plugins)
 #
 # 显示本帮助:
 #   rbenv help update
-#   rbenv update --help   
+#   rbenv update --help
 #
 
 # ------------------------------------------------------
@@ -19,7 +19,7 @@
 # Authors       : ccmywish <ccmywish@qq.com>
 #                 Konstantin Haase <github@rkh.im>
 # Created on    : <2020-12-09>
-# Last modified : <2022-04-09>
+# Last modified : <2022-05-02>
 #
 # rbenv-update:
 #
@@ -41,7 +41,7 @@ echo_colored() {
 
 
 is_git_repo() {
-  command git remote -v &> /dev/null 
+  command git remote -v &> /dev/null
 }
 
 plugin_update() {
@@ -54,8 +54,8 @@ plugin_update() {
   fi
 }
 
-echo_colored "rbenv-cn> 从gitee.com/RubyKids镜像更新rbenv"
-git -C $RBENV_ROOT pull 
+echo_colored "rbenv-cn> 从Gitee mirrors_rbenv更新rbenv"
+git -C $RBENV_ROOT pull
 
 echo
 
