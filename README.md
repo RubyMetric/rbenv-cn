@@ -2,11 +2,7 @@
 
 # rbenv-cn
 
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ccmywish)
-
 </div>
-
-> **如果您长时间使用本项目，请考虑捐赠作者(本页最下方)，谢谢**
 
 ## 概述
 
@@ -24,6 +20,8 @@
 
 **注意! Ruby用户可以直接通过RubyGems来安装，因此您只需要记住rbenv-cn这个名字即可**，安装方式请阅读下述内容。
 
+> **如果您长时间使用本项目，请考虑捐赠作者(本页最下方)，谢谢**
+
 <br>
 
 ## 功能
@@ -34,7 +32,7 @@
 
 1. `rbenv` <2023-05-01> 现已由Gitee官方管理，(查看[最新状态](https://gitee.com/mirrors_rbenv/rbenv))，每天更新
 
-  ~~>最低两周一次手动更新，~~ 此是否更新几乎不影响使用
+    ~~>最低两周一次手动更新，~~ 此是否更新几乎不影响使用
 
 2. `ruby-build` 由Gitee官方管理，(查看[最新状态](https://gitee.com/mirrors/ruby-build))，每天更新，这是管理Ruby版本的真正仓库，所以不用担心更新不及时
 
