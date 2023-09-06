@@ -124,7 +124,14 @@ rbenv sudo rails s -p 81
 
 <br>
 
-## Gem换源
+## Gem 换源
+
+推荐您使用C语言编写的全平台换源工具 [RubyMetric/chsrc](https://gitee.com/RubyMetric/chsrc)
+
+![chsrc](./images/chsrc.png)
+
+`chsrc` 将测速挑选最快镜像站，并自动执行下述命令：
+
 ```bash
 gem source -r https://rubygems.org/
 gem source -a https://gems.ruby-china.com
