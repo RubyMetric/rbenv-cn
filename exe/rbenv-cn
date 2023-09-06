@@ -14,13 +14,13 @@
 
 def install
   exec <<EOF
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/install.sh)"
 EOF
 end
 
 def uninstall
   exec <<EOF
-  bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
+  bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/uninstall.sh)"
 EOF
 end
 
@@ -30,7 +30,7 @@ def help
 rbenv-cn:
 
     该Gem仅用于帮助您快速安装/卸载`rbenv-cn`
-    https://gitee.com/RubyKids/rbenv-cn
+    https://gitee.com/RubyMetric/rbenv-cn
 
 usage:
 

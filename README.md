@@ -26,7 +26,7 @@
 
 ## 功能
 
-支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，或者您想直接参与开发与日常维护，请您在[issues](https://gitee.com/RubyKids/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
+支持Bash, Zsh暂不支持Fish, PowerShell. 若您有新的想法，或发现了存在的问题，或可改善的地方(比如对新Shell的支持，其他插件的补充)，或者您想直接参与开发与日常维护，请您在[issues](https://gitee.com/RubyMetric/rbenv-cn/issues) 处反馈，并请阅读[CONTRIBUTING.md](./CONTRIBUTING.md)
 
 **镜像说明:**
 
@@ -71,10 +71,10 @@ rbenv-cn uninstall
 若没有，则可以通过下面的安装脚本一键安装/卸载
 ```shell
 # 安装
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/install.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/install.sh)"
 
 # 卸载
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninstall.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/uninstall.sh)"
 ```
 
 <br>
@@ -83,7 +83,7 @@ bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tools/uninsta
 ```bash
 rbenv doctor
 # 或
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/bin/rbenv-doctor | bash
+curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/bin/rbenv-doctor | bash
 ```
 
 <br>

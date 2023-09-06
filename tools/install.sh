@@ -32,7 +32,7 @@ Works as a rbenv plugin:
   Name:      rbenv-cn
   Version:   ${RBENV_CN_VERSION}
   Author:    ccmywish
-  Bug track: https://gitee.com/RubyKids/rbenv-cn/issues
+  Bug track: https://gitee.com/RubyMetric/rbenv-cn/issues
   Thanks:    Ruby China, UpYun CDN and Gitee
 
 PLUGIN_INFO
@@ -57,8 +57,8 @@ git clone -q https://gitee.com/mirrors_rbenv/rbenv "$HOME/.rbenv"
 echo_colored "rbenv-cn> Pulling 'ruby-build' from official Gitee 'mirrors' ..."
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
-echo_colored "rbenv-cn> Pulling 'rbenv-cn' from 'RubyKids' as a plugin ..."
-git clone -q https://gitee.com/RubyKids/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv-cn"
+echo_colored "rbenv-cn> Pulling 'rbenv-cn' from 'RubyMetric' as a plugin ..."
+git clone -q https://gitee.com/RubyMetric/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv-cn"
 
 echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"
 echo -e "\n# rbenv config " >> ~/.bashrc

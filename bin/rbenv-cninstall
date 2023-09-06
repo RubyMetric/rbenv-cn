@@ -70,7 +70,7 @@ rbenv-cn-version() {
 name:      rbenv-cn
 version:   0.3.3
 author:    ccmywish
-bug track: https://gitee.com/RubyKids/rbenv-cn/issues
+bug track: https://gitee.com/RubyMetric/rbenv-cn/issues
 
 RBENV_CN_VERSION
 }

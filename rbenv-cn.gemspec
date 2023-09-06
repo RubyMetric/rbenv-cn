@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = "rbenv-cn"
   s.version = "1.1.0"
   s.date = "2022-04-11"
-  
+
   s.summary = "rbenv-cn: install `rbenv` and `rbenv-cn` plugin quikly for Chinese users. "
 
   s.description = <<DESC
@@ -13,7 +13,7 @@ DESC
 
   s.authors = "ccmywish"
   s.email = "ccmywish@qq.com"
-  s.homepage = "https://gitee.com/RubyKids/rbenv-cn"
+  s.homepage = "https://gitee.com/RubyMetric/rbenv-cn"
 
   s.files = [
   ]
@@ -22,8 +22,8 @@ DESC
   s.executables = ["rbenv-cn"]
 
   s.metadata = {
-    "bug_tracker_uri"   => "https://github.com/RubyKids/rbenv-cn/issues",
-    "source_code_uri"   => "https://github.com/RubyKids/rbenv-cn"
+    "bug_tracker_uri"   => "https://github.com/RubyMetric/rbenv-cn/issues",
+    "source_code_uri"   => "https://github.com/RubyMetric/rbenv-cn"
   }
 
 end
