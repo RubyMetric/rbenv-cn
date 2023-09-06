@@ -8,8 +8,8 @@
 
 `rbenv-cn` 使用:
 
-1. Gitee官方提供的`rbenv`和`ruby-build`镜像
-2. Ruby China社区提供的CRuby镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)
+1. Gitee 官方提供的`rbenv`和`ruby-build`镜像
+2. Ruby China 社区提供的CRuby镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)
 
 帮助您在国内网络环境下的类Unix系统上编译，安装多版本Ruby，保证不需要使用任何外网（目前只能保证CRuby, 而 mruby, JRuby 等不支持）
 

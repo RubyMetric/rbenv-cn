@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "rbenv-cn"
-  s.version = "1.1.0"
-  s.date = "2022-04-11"
+  s.version = "2.0.0"
+  s.date = "2023-09-06"
 
   s.summary = "rbenv-cn: install `rbenv` and `rbenv-cn` plugin quikly for Chinese users. "
 
@@ -22,8 +22,8 @@ DESC
   s.executables = ["rbenv-cn"]
 
   s.metadata = {
-    "bug_tracker_uri"   => "https://github.com/RubyMetric/rbenv-cn/issues",
-    "source_code_uri"   => "https://github.com/RubyMetric/rbenv-cn"
+    "bug_tracker_uri"   => "https://gitee.com/RubyMetric/rbenv-cn/issues",
+    "source_code_uri"   => "https://gitee.com/RubyMetric/rbenv-cn"
   }
 
 end

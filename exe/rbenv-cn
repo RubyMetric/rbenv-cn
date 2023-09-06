@@ -3,13 +3,12 @@
 # File          : rbenv-cn.rb
 # Authors       : ccmywish <ccmywish@qq.com>
 # Created on    : <2022-03-23>
-# Last modified : <2023-02-08>
+# Last modified : <2023-09-06>
 #
 # rbenv-cn:
 #
 #   install `rbenv` and `rbenv-cn` plugin quickly
 # for Chinese users.
-#
 # ------------------------------------------------------
 
 def install
