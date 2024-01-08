@@ -51,7 +51,7 @@ echo_colored() {
   printf "${color}%s${reset}\n" "$1"
 }
 
-echo_colored "以下仓库均位于 Gitee"
+echo_colored "=> 以下仓库均位于 Gitee"
 echo_colored "rbenv-cn> 安装 rbenv 自仓库 mirrors_rbenv/rbenv (由 Gitee 维护)"
 git clone -q https://gitee.com/mirrors_rbenv/rbenv "$HOME/.rbenv"
 
