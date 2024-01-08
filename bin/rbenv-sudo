@@ -4,15 +4,15 @@
 #
 # Usage: rbenv sudo <command>
 #
-# 使用root权限运行 command 
+# 使用root权限运行 command
 #
 # 显示本帮助:
 #   rbenv help sudo
-#   rbenv sudo --help   
+#   rbenv sudo --help
 #
 
 # Copyright (C) 2012, Dan Carley
-# Copyright (C) 2021, ccmywish
+# Copyright (C) 2021, Aoran Zeng
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
