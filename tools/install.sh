@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ------------------------------------------------------
 # File          : install.sh
-# Authors       : ccmywish <ccmywish@qq.com>
+# Authors       : Aoran Zeng <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2023-05-01>
+# Last modified : <2024-01-08>
 #
 # install:
 #
@@ -51,13 +51,14 @@ echo_colored() {
   printf "${color}%s${reset}\n" "$1"
 }
 
-echo_colored "rbenv-cn> Pulling 'rbenv' from official Gitee 'mirrors_rbenv' ..."
+echo_colored "以下仓库均位于 Gitee"
+echo_colored "rbenv-cn> 安装 rbenv 自仓库 mirrors_rbenv/rbenv (由 Gitee 维护)"
 git clone -q https://gitee.com/mirrors_rbenv/rbenv "$HOME/.rbenv"
 
-echo_colored "rbenv-cn> Pulling 'ruby-build' from official Gitee 'mirrors' ..."
+echo_colored "rbenv-cn> 安装插件 ruby-build 自仓库 mirrors/ruby-build (由 Gitee 维护)"
 git clone -q https://gitee.com/mirrors/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 
-echo_colored "rbenv-cn> Pulling 'rbenv-cn' from 'RubyMetric' as a plugin ..."
+echo_colored "rbenv-cn> 安装插件 rbenv-cn 自仓库 RubyMetric/rbenv-cn"
 git clone -q https://gitee.com/RubyMetric/rbenv-cn.git "$HOME/.rbenv/plugins/rbenv-cn"
 
 echo_colored "rbenv-cn> 添加rbenv命令至环境变量(Bash,Zsh)"

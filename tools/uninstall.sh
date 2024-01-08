@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ------------------------------------------------------
 # File          : uninstall.sh
-# Authors       : ccmywish <ccmywish@qq.com>
+# Authors       : Aoran Zeng <ccmywish@qq.com>
 # Created on    : <2020-12-10>
 # Last modified : <2022-03-20>
 #
