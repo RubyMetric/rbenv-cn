@@ -3,7 +3,7 @@
 # File          : rbenv-cn.rb
 # Authors       : Aoran Zeng <ccmywish@qq.com>
 # Created on    : <2022-03-23>
-# Last modified : <2023-09-06>
+# Last modified : <2024-05-26>
 #
 # rbenv-cn:
 #
@@ -12,31 +12,28 @@
 # ------------------------------------------------------
 
 def install
-  exec <<EOF
-bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/install.sh)"
-EOF
+  exec <<~EOF
+    bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tool/install.sh)"
+  EOF
 end
 
 def uninstall
-  exec <<EOF
-  bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tools/uninstall.sh)"
-EOF
+  exec <<~EOF
+    bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tool/uninstall.sh)"
+  EOF
 end
 
-
 def help
-  puts <<-EOH
-rbenv-cn:
+  puts <<~EOH
+    rbenv-cn: 该Gem仅用于帮助您快速安装和卸载 rbenv-cn
 
-    该Gem仅用于帮助您快速安装/卸载`rbenv-cn`
-    https://gitee.com/RubyMetric/rbenv-cn
+    维护地址: https://gitee.com/RubyMetric/rbenv-cn
 
-usage:
-
+    Usage:
     rbenv-cn install   => 安装
     rbenv-cn uninstall => 卸载
 
-EOH
+  EOH
 end
 
 
