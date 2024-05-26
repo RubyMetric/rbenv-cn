@@ -2,25 +2,25 @@
 
 # rbenv-cn
 
+帮助您在国内网络环境下的类`Unix`系统上编译，安装，管理多版本`Ruby`
+
+无需使用任何外网环境（目前只支持`CRuby`, 而`mruby`,`JRuby`等不支持）
+
 </div>
 
-## 概述
+## 功能
 
-`rbenv-cn` 帮助您在国内网络环境下的类Unix系统上编译，安装多版本`Ruby`，保证不需要使用任何外网（目前仅支持 `CRuby`, 而 `mruby`, `JRuby` 等不支持）
+支持`Bash`,`Zsh`，暂不支持`Fish`,`PowerShell`.
 
-1. 作为`rbenv` (包含`ruby-build`) 的国内一键安装/卸载脚本，安装仅需4秒
-2. `rbenv-cn`作为`rbenv`的一个标准插件(包含4个命令)来工作，切换使用国内镜像来下载源代码
-3. `rbenv-cn` 解决的是 `Ruby` 自身的国内下载问题，而 `rubygems` 包的国内下载问题，您可阅读最下方手动进行换源，或通过 [RubyMetric/chsrc] 多平台自动测速换源
+1. 作为`rbenv` (包含`ruby-build`) 的国内一键安装与卸载脚本，安装仅需4秒
+2. `rbenv-cn`作为`rbenv`的一个标准插件，包含4个命令，功能为使用国内镜像
+3. `rbenv-cn` 解决的是 `Ruby` 自身的国内下载问题，而 `rubygems` 包的国内下载问题，您可阅读最下方手动进行换源，或通过 [RubyMetric/chsrc] 全平台通用多软件自动测速换源
 
 > **如果您长时间使用本项目，请考虑捐赠 (本页最下方)**
 
 <br>
 
-## 功能
-
-支持`Bash`,`Zsh`暂不支持`Fish`,`PowerShell`.
-
-**镜像说明:**
+## 镜像说明
 
 1. `rbenv` 由Gitee官方管理，每天更新。查看[最新状态](https://gitee.com/mirrors_rbenv/rbenv)
 
@@ -46,7 +46,7 @@
 
 ## 安装
 
-如果您的系统已经安装Ruby，您可以简单地直接通过`Gem`来安装
+如果您的系统已经安装`Ruby`，可以简单地直接通过`gem`命令来安装
 ```bash
 # 安装此 gem
 gem install rbenv-cn
@@ -81,7 +81,7 @@ curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/bin/rbenv-doctor | bash
 ## 使用
 
 `ruby-build` 并不检查编译环境，需要手动先安装好。请先查看下方的编译依赖。
-[编译依赖](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment)
+[查看编译依赖](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment)
 
 ```bash
 # 在rbenv的基础上，可以调用三个子命令
@@ -116,7 +116,7 @@ rbenv sudo rails s -p 81
 
 ## Gem换源
 
-推荐您使用C语言编写的全平台换源工具 [RubyMetric/chsrc]
+推荐您使用C语言编写的全平台通用多软件换源工具 [RubyMetric/chsrc]
 
 ![chsrc](https://gitee.com/RubyMetric/chsrc/raw/main/image/example.png)
 
