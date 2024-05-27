@@ -2,7 +2,7 @@
 
 # rbenv-cn
 
-帮助您在国内网络环境下的类`Unix`系统上编译，安装，管理多版本`Ruby`
+在国内网络环境下的类`Unix`系统上编译，安装，管理多版本`Ruby`
 
 无需使用任何外网环境（目前只支持`CRuby`, 而`mruby`,`JRuby`等不支持）
 
@@ -14,7 +14,7 @@
 
 1. 作为`rbenv` (包含`ruby-build`) 的国内一键安装与卸载脚本，安装仅需4秒
 2. `rbenv-cn`作为`rbenv`的一个标准插件，包含4个命令，功能为使用国内镜像
-3. `rbenv-cn` 解决的是 `Ruby` 自身的国内下载问题，而 `rubygems` 包的国内下载问题，您可阅读最下方手动进行换源，或通过 [RubyMetric/chsrc] 全平台通用多软件自动测速换源
+3. `rbenv-cn` 解决的是 `Ruby` 自身的国内下载问题，而 `rubygems` 包的国内下载问题，可阅读最下方手动进行换源，或通过 [RubyMetric/chsrc] 全平台通用多软件自动测速换源
 
 > **如果您长时间使用本项目，请考虑捐赠 (本页最下方)**
 
@@ -46,7 +46,7 @@
 
 ## 安装
 
-如果您的系统已经安装`Ruby`，可以简单地直接通过`gem`命令来安装
+如果你已经安装`Ruby`，可以简单地直接通过`gem`命令来安装
 ```bash
 # 安装此 gem
 gem install rbenv-cn
@@ -61,19 +61,19 @@ rbenv-cn uninstall
 若没有，则可以通过下面的安装脚本一键安装/卸载
 ```shell
 # 安装
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tool/install.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tool/install.sh)"
 
 # 卸载
-bash -c "$(curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/tool/uninstall.sh)"
+bash -c "$(curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/tool/uninstall.sh)"
 ```
 
 <br>
 
-如果您发现异常，可以使用以下两种方式检查:
+如果发现异常，可以使用以下两种方式检查:
 ```bash
 rbenv doctor
 # 或
-curl -fsSL https://gitee.com/RubyKids/rbenv-cn/raw/main/bin/rbenv-doctor | bash
+curl -fsSL https://gitee.com/RubyMetric/rbenv-cn/raw/main/bin/rbenv-doctor | bash
 ```
 
 <br>
@@ -116,7 +116,7 @@ rbenv sudo rails s -p 81
 
 ## Gem换源
 
-推荐您使用C语言编写的全平台通用多软件换源工具 [RubyMetric/chsrc]
+推荐使用C语言编写的全平台通用多软件换源工具 [RubyMetric/chsrc]
 
 ![chsrc](https://gitee.com/RubyMetric/chsrc/raw/main/image/example.png)
 
