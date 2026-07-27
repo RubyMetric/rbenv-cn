@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Summary: 通过Ruby China cache安装指定版本的Ruby
+# Summary: 通过镜像站的cache安装指定版本的Ruby
 #
 # Usage: rbenv cninstall <version>
 #
@@ -17,21 +17,22 @@
 
 # ------------------------------------------------------
 # File          : rbenv-cninstall.sh
-# Authors       : Aoran Zeng <ccmywish@qq.com>
+# Authors       : 曾奥然 <ccmywish@qq.com>
 # Created on    : <2020-12-07>
-# Last modified : <2022-04-26>
+# Last modified : <2026-07-27>
 #
 # rbenv-cninstall:
 #
 #   rbenv cninstall x.x.x
 #
-#   Install a Ruby version via Ruby China cache
+#   Install a Ruby version via a mirror site cache
 # ------------------------------------------------------
 
 #
 # Link example:
 #
 #   https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.bz2
+#   https://mirrors.ustc.edu.cn/ruby/pub/ruby/2.6/ruby-2.6.0.tar.bz2
 #   https://cache.ruby-china.com/pub/ruby/2.6/ruby-2.6.0.tar.bz2
 #
 
@@ -68,7 +69,7 @@ usage() {
 rbenv-cn-version() {
   cat << RBENV_CN_VERSION
 name:      rbenv-cn
-version:   0.3.3
+version:   0.3.4
 author:    ccmywish
 bug track: https://gitee.com/RubyMetric/rbenv-cn/issues
 
@@ -121,7 +122,7 @@ set_package_url() {
 
   tarball_url=${original_url%#*}
 
-  mirror_tarball_url=${tarball_url/ruby-lang.org/ruby-china.com}
+  mirror_tarball_url=${tarball_url/cache.ruby-lang.org/mirrors.ustc.edu.cn/ruby}
   mirror_tarball_url=${mirror_tarball_url:1}
 
   export RUBY_BUILD_MIRROR_PACKAGE_URL=$mirror_tarball_url

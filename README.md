@@ -26,8 +26,7 @@
 
 2. `ruby-build` 由Gitee官方管理，每天更新，这是管理Ruby版本的真正仓库，所以不用担心更新不及时。查看[最新状态](https://gitee.com/mirrors/ruby-build)
 
-3. `ruby-build` 构建CRuby的过程使用的是 [Ruby China 社区](https://ruby-china.org/) 提供的镜像 [https://cache.ruby-china.com/](https://cache.ruby-china.com/)
-
+3. `ruby-build` 构建CRuby的过程使用的是中国科学技术大学提供的镜像 <https://mirrors.ustc.edu.cn/ruby/>
 <br>
 
 ## 截图
@@ -96,7 +95,7 @@ rbenv update
 # 查看支持的Ruby版本
 rbenv cninstall -l 或 -L
 
-# 此命令自动从Ruby China提供的镜像上下载某指定版本的Ruby并接着运行编译等过程
+# 此命令自动从中国科学技术大学提供的镜像上下载某指定版本的Ruby并接着运行编译等过程
 # 该命令用来替换常见的 rbenv install 3.4.0-preview1
 rbenv cninstall 3.4.0-preview1
 

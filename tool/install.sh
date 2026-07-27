@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ------------------------------------------------------
 # File          : install.sh
-# Authors       : Aoran Zeng <ccmywish@qq.com>
+# Authors       : 曾奥然 <ccmywish@qq.com>
 # Created on    : <2020-12-10>
-# Last modified : <2024-07-03>
+# Last modified : <2026-07-27>
 #
 # install:
 #
@@ -12,7 +12,7 @@
 
 set -e
 
-RBENV_CN_VERSION="0.3.3"
+RBENV_CN_VERSION="0.3.4"
 
 # Generated from https://ascii-generator.site/t/
 # using  slant (more compact fixed)
@@ -33,7 +33,7 @@ Works as a rbenv plugin:
   Version:   ${RBENV_CN_VERSION}
   Author:    ccmywish
   Bug track: https://gitee.com/RubyMetric/rbenv-cn/issues
-  Thanks:    Ruby China, UpYun CDN and Gitee
+  Thanks:    USTC(中国科学技术大学开源软件镜像)，Gitee, Ruby China
 
 PLUGIN_INFO
 
@@ -72,9 +72,9 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 
 
 # 改用RUBY_BUILD_MIRROR_PACKAGE_URL后，会与此起冲突，所以务必取消
-# echo "=> 使用Ruby China镜像"
-# echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.bashrc
-# echo "export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com" >> ~/.zshrc
+# echo "=> 使用USTC镜像"
+# echo "export RUBY_BUILD_MIRROR_URL=https://mirrors.ustc.edu.cn/ruby" >> ~/.bashrc
+# echo "export RUBY_BUILD_MIRROR_URL=https://mirrors.ustc.edu.cn/ruby" >> ~/.zshrc
 
 
 # 自动添加，而不是需要用户手动输入rbenv init
